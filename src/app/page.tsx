@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logo from "public";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -6,8 +7,8 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          
+          <code className={styles.code}>nahuel_pro_517@hotmail.com</code>
         </p>
         <div>
           <a
@@ -29,14 +30,12 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <Image
+    src="/blanco-negro-llaves.png"
+    alt="Logo de Servis General N.H"
+    width={190} // Ajusta el ancho según tus necesidades
+    height={190} // Ajusta la altura según tus necesidades
+  />
       </div>
 
       <div className={styles.grid}>
@@ -47,9 +46,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
+            Nosotros <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>empresa dedicada al mantenimiento preventivo edilicio.</p>
         </a>
 
         <a
@@ -59,9 +58,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Learn <span>-&gt;</span>
+            Servicios <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>Empresa dedicada a la refrigeracion,plomeria y electricidad.</p>
         </a>
 
         <a
@@ -71,9 +70,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Templates <span>-&gt;</span>
+            Galeria <span>-&gt;</span>
           </h2>
-          <p>Explore starter templates for Next.js.</p>
+          <p>muestra de nuestros trabajos realizados.</p>
         </a>
 
         <a
@@ -83,10 +82,10 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Deploy <span>-&gt;</span>
+            Contacto <span>-&gt;</span>
           </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            donde poder obtener nuestros servicios o consulta sobre presupuestos.
           </p>
         </a>
       </div>
