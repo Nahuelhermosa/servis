@@ -1,9 +1,16 @@
+import Link from 'next/link';
 import './Nosotros.css'
 
 export default function Nosotros () {
     return (
         <div className="Nosotros">
-            <h1>ServiNH</h1>
+        <Link href="/">
+        <h1>
+        <img className="imagen-container" src="blanco-negro-llaves.png" alt="<Home/>" />
+        ServisNH
+        </h1>
+        </Link>
+                
             <br />
             <h2>                    
             Empresa especialisada en REFRIGERACION(instalacion de aire acondicionado,arreglo de heladeras,frizzer y camaras),LAVARROPAS y SECARROPAS(especialista en arreglos de lavarropas de carga frontal,superior y secarropas).

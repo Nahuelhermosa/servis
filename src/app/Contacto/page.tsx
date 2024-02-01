@@ -1,10 +1,16 @@
+import Link from 'next/link';
 import './Contacto.css'
 
 export default function Contacto () {
     return (
         <>
         <div className='contacto'>
-            <h1>Contactos</h1>
+        <Link href="/">
+        <h1>
+        <img className="imagen-container" src="blanco-negro-llaves.png" alt="<Home/>" />
+        ServisNH
+        </h1>
+        </Link>
             <br />
             <h2>Ante cualquier duda acerca de la garantia de las consolas y los accesorios deportivos seran respondida a la brebedad muchas gracias.</h2>
             <br />
