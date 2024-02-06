@@ -6,7 +6,7 @@ export default function Nosotros () {
         <div className="Nosotros">
         <Link href="/">
         <h1>
-        <img className="imagen-container" src="blanco-negro-llaves.png" alt="<Home/>" />
+        <img className="imagen-container" src="negro-blanco.png" alt="<Home/>" />
         ServisNH
         </h1>
         </Link>

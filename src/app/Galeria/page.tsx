@@ -6,16 +6,20 @@ export default function Nosotros () {
         <div className="Galeria">
         <Link href="/">
         <h1>
-          <img className="imagen-container" src="blanco-negro-llaves.png" alt="<Home/>" />
+          <img className="imagen-container" src="negro-blanco.png" alt="<Home/>" />
           ServisNH
         </h1>
         </Link>
+        <br />
+                <div className="servicio-contenedor">                    
+            <p>Nos dedicamos al mantenimiento de heladera,instalacion de aire acondicionado,secarropas y heladeras.
+                 </p>
             <br />
-            <h2>                    
-            Empresa especialisada en REFRIGERACION(instalacion de aire acondicionado,arreglo de heladeras,frizzer y camaras),LAVARROPAS y SECARROPAS(especialista en arreglos de lavarropas de carga frontal,superior y secarropas).
-            Somos una empresa que se dedica al arreglo de split y heladeras, poseemos las herramientas indicadas para su deteccion y arreglo posterior.Soldamos caños,cambiamos motores,hacemos cargas de gas.    
-            </h2>
-            <br />
+            <div className="contenedor-imagenes">
+            <img className='imagen-servicio' src="secarropas.jpg" alt="servicio" />
+            <img className='imagen-servicio' src="lavarropas.jpg" alt="servicio" />
+            </div>
+        </div>
         </div>
     )
 }

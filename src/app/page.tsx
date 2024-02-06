@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          <code className={styles.code}>Desarrolador: nahuel_pro_517@hotmail.com</code>
+          <code className={styles.code}>Designer:nahuel_pro_517@hotmail.com</code>
         </p>
         <div>
           <a
