@@ -7,7 +7,7 @@ export default function Contacto () {
         <div className='contacto'>
         <Link href="/">
         <h1>
-        <img className="imagen-container" src="negro-blanco.png" alt="<Home/>" />
+        <img className="imagen-container" src="blanco-negro-llaves-inicio2.png" alt="<Home/>" />
         Contacto
         </h1>
         </Link>
