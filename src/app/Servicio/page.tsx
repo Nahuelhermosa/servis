@@ -7,7 +7,7 @@ export default function Servicio() {
       <Link href="/">
         <h1>
         <img className="imagen-container" src="blanco-negro-llaves-inicio2.png" alt="<Home/>" />
-        ServisNH
+        Servicio
         </h1>
       </Link>
       <br />

@@ -7,7 +7,7 @@ export default function Nosotros () {
         <Link href="/">
         <h1>
           <img className="imagen-container" src="blanco-negro-llaves-inicio2.png" alt="<Home/>" />
-          ServisNH
+          Galeria
         </h1>
         </Link>
         <br />
