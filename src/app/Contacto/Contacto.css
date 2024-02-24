@@ -20,7 +20,7 @@
   .formulario textarea,
   .formulario input[type="submit"] {
    
-    max-width: 1000px; 
+    max-width: 900px; 
     margin: 5px;
   }
 
