@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          <code className={styles.code}>WhatsApp 1166784827</code>
+          <code className={styles.code}>WhatsApp +54 11 66784827</code>
         </p>
         <div>
           <a
