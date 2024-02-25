@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          <code className={styles.code}>Designer:nahuel_pro_517@hotmail.com</code>
+          <code className={styles.code}>WhatsApp 1166784827</code>
         </p>
         <div>
           <a
@@ -16,14 +16,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            Nahuel Eduardo Hermosa
           </a>
         </div>
       </div>
