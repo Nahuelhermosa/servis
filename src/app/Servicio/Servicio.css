@@ -6,12 +6,17 @@
     align-items: center;
     font-size: 200%; 
   }
+  .info {
+    color: floralwhite;
+    text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: 25px;
+    
+}
   .imagen-container {
     
-    max-width: 10%;
-    height: auto; 
-    display: block; 
-    margin: 15px 15px 0px 30px; 
-    float: left;
+    max-width: 50px;
+ 
     
   }

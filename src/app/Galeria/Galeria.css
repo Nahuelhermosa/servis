@@ -6,6 +6,10 @@
     align-items: center;
     font-size: 200%; 
   }
+  .imagen-container{
+    max-width: 50px;
+  }
+
   .servicio-contenedor p {
     font-size: 25px;
   }

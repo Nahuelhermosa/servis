@@ -7,12 +7,12 @@ export default function Contacto () {
         <div className='contacto'>
         <Link href="/">
         <h1>
-        <img className="imagen-container" src="blanco-negro-llaves-inicio2.png" alt="<Home/>" />
+        <img className="imagen-container" src="logo-amarillo.png" alt="<Home/>" />
         Contacto
         </h1>
         </Link>
             <br />
-            <h2>Ante cualquier duda acerca de la garantia de las consolas y los accesorios deportivos seran respondida a la brebedad muchas gracias.</h2>
+            <p className='info'>Ante cualquier duda acerca de la garantia de las consolas y los accesorios deportivos seran respondida a la brebedad muchas gracias.</p>
             <br />
 
             <form name="contacto" data-netlify="true" netlify-honeypot="bot-field" hidden> 

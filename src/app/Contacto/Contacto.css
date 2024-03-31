@@ -6,6 +6,13 @@
     align-items: center;
     font-size: 200%; 
   }
+  .info {
+    color:floralwhite;
+    text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
+    font-size: 51px;
+    font-weight: 800;
+    margin-top: 25px;
+}
   
   .formulario {
     display: flex;
