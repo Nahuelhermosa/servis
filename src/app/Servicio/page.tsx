@@ -1,15 +1,16 @@
 import Link from 'next/link';
 import './Servicio.css';
+import Nav from '../Componentes/Nav';
 
 export default function Servicio() {
   return (
+    <>
+    <Nav/>
     <div className="Servicio">
-      <Link href="/">
-        <h1>
-        <img className="imagen-container" src="logo-amarillo.png" alt="<Home/>" />
+        <h1 className='titulo-servicio'>
         Servicio
         </h1>
-      </Link>
+     
       <br />
       <p className='info'>
         Empresa especializada en REFRIGERACIÓN (instalación de aire acondicionado, arreglo de heladeras, frizzer y cámaras),
@@ -19,5 +20,6 @@ export default function Servicio() {
       </p>
       <br />
     </div>
+    </>
   );
 }

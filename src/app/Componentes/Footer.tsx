@@ -3,7 +3,7 @@ export default function Footer () {
     return (
         <footer className='footer'>
             &copy; Copyright 2023
-            <p>Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</p>
+            <p>Calle 207, Piso 1, CP 1886, Sourigues, CABA</p>
         </footer>
     )
 }

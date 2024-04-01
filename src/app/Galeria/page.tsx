@@ -1,17 +1,17 @@
 import Link from 'next/link';
 import './Galeria.css'
+import Nav from '../Componentes/Nav';
 
 export default function Nosotros () {
     return (
+         <>
+        <Nav/>
         <div className="Galeria">
-        <Link href="/">
-        <h1>
-          <img className="imagen-container" src="logo-amarillo.png" alt="<Home/>" />
+        <h1 className='titulo-galeria'>
           Galeria
         </h1>
-        </Link>
         <br />
-                <div className="servicio-contenedor">                    
+        <div className="servicio-contenedor">                    
             <p>Nos dedicamos al mantenimiento de heladera,instalacion de aire acondicionado,secarropas y heladeras.
                  </p>
             <br />
@@ -21,5 +21,6 @@ export default function Nosotros () {
             </div>
         </div>
         </div>
+        </>
     )
 }

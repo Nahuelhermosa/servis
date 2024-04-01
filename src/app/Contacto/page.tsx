@@ -1,16 +1,16 @@
 import Link from 'next/link';
 import './Contacto.css'
-
+import Nav from '../Componentes/Nav';
 export default function Contacto () {
     return (
         <>
+        <Nav/>
         <div className='contacto'>
-        <Link href="/">
-        <h1>
-        <img className="imagen-container" src="logo-amarillo.png" alt="<Home/>" />
+            
+        <h1 className='titulo'>
         Contacto
         </h1>
-        </Link>
+      
             <br />
             <p className='info'>Ante cualquier duda acerca de la garantia de las consolas y los accesorios deportivos seran respondida a la brebedad muchas gracias.</p>
             <br />

@@ -1,8 +1,10 @@
 .footer {
-    background-color: rgb(240, 110, 4);
+    background-color: #f8f8f7;
     max-width: 100%;
     margin: 0px auto;
     
     padding: 0px 0;
     text-align: center;
+    color: black;
+    
 }

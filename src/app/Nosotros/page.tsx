@@ -1,15 +1,17 @@
 import Link from 'next/link';
 import './Nosotros.css'
+import Nav from '../Componentes/Nav';
+
 
 export default function Nosotros () {
     return (
+        <>
+        <Nav/>
         <div className="Nosotros">
-        <Link href="/">
-        <h1>
-        <img className="imagen-container" src="logo-amarillo.png"  alt="<Home/>" />
+        <h1 className='titulo-nosotros'>
         Nosotros
         </h1>
-        </Link>
+       
                 
         <br />
                 <div className="servicio-contenedor">                    
@@ -22,5 +24,6 @@ export default function Nosotros () {
             </div>
         </div>
         </div>
+        </>
     )
 }
