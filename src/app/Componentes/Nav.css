@@ -1,6 +1,6 @@
 .nav {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 20px 10px 10px 10px;
     padding-bottom: 10px;
   }
   
@@ -36,6 +36,6 @@
   
   
   .nav-item img {
-    max-width: 100px; 
+    max-width: 80px; 
     height: auto; 
   }

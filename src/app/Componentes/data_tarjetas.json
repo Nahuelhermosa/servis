@@ -1,0 +1,108 @@
+[
+    {
+        "id":1,
+        "categoria": "lavarropa",
+        "imagen": "1.jpg",
+        "titulo": "lavarropa",
+        "descripcion": "lavarropa"
+      
+    },
+    {
+        "id":2,
+        "categoria": "lavarropa",
+        "imagen": "2.jpg",
+        "titulo": "lavarropa",
+        "descripcion": "lavarropa"
+       
+    },
+    {
+        "id":3,
+        "categoria":"lavarropa",
+        "imagen": "3.jpg",
+        "titulo": "lavarropa",
+        "descripcion": "lavarropa"
+       
+    },
+   
+    {
+        "id":4,
+        "categoria":"heladera",
+        "imagen": "4.jpg",
+        "titulo": "heladera",
+        "descripcion": "cambio de burletes"
+     
+    },
+    {
+        "id":5,
+        "categoria":"heladera",
+        "imagen": "5.jpg",
+        "titulo": "heladera",
+        "descripcion": "cambio de burletes"
+       
+    },
+  
+    {
+        "id":6,
+        "categoria":"heladera",
+        "imagen": "6.jpg",
+        "titulo": "heladera",
+        "descripcion": "cambio de burletes"
+       
+    },
+    {
+        "id":7,
+        "categoria":"heladera",
+        "imagen": "7.jpeg",
+        "titulo": "heladera",
+        "descripcion": "carga de gas "
+    },
+    {
+        "id":8,
+        "categoria":"secarropas",
+        "imagen": "8.jpg",
+        "titulo": "secarropas",
+        "descripcion": "carga de gas "
+    },
+    {
+        "id":9,
+        "categoria":"secarropas",
+        "imagen": "9.jpg",
+        "titulo": "secarropas",
+        "descripcion": "carga de gas "
+    },
+    {
+        "id":10,
+        "categoria":"secarropas",
+        "imagen": "10.jpg",
+        "titulo": "secarropas",
+        "descripcion": "carga de gas "
+    },
+    {
+        "id":11,
+        "categoria":"secarropas",
+        "imagen": "11.jpg",
+        "titulo": "secarropas",
+        "descripcion": "carga de gas "
+    },
+    {
+        "id":12,
+        "categoria":"aire",
+        "imagen": "aire1.jpg",
+        "titulo": "aire",
+        "descripcion": "carga de gas "
+    },
+    {
+        "id":13,
+        "categoria":"aire",
+        "imagen": "aire2.jpg",
+        "titulo": "aire",
+        "descripcion": "carga de gas "
+    },
+    {
+        "id":14,
+        "categoria":"aire",
+        "imagen": "aire3.jpeg",
+        "titulo": "aire",
+        "descripcion": "carga de gas "
+    }
+]

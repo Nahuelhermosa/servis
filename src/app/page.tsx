@@ -25,8 +25,8 @@ export default function Home() {
       <Image
     src="/blanco-negro-llaves.png"
     alt="Logo de Servis General N.H"
-    width={190} // Ajusta el ancho según tus necesidades
-    height={190} // Ajusta la altura según tus necesidades
+    width={190} // Ajusta el ancho 
+    height={190} // Ajusta la altura 
   />
       </div>
 
