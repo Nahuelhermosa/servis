@@ -1,25 +1,15 @@
 .card {
  
-    max-width: 400px;
-    margin: 40px auto;
+    max-width: 100%;
+    margin: 1rem;
     color: var(rgb(10, 10, 10));
-    border-radius: 8px;
+    border-radius: 1rem;
     border: 1px solid var(rgb(10, 10, 10));
-    text-align: left;
+   
 }
 .imagen-producto-venta {
-    width: 300px; /* Ancho de 200 píxeles */
-    height: 350px; /* Altura de 150 píxeles */
+  max-width: 100%;
 
   }
-  
-.card-info {
-    padding: 8px 16px;
-}
-
-.descripcion {
-    color: var(rgb(14, 13, 13));
-    margin-bottom: 8px;
-}
 
 

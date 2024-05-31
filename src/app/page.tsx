@@ -31,13 +31,7 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-      <Link href="/Nosotros"
-         className={styles.card}>
-          <h2>
-            Nosotros <span>-&gt;</span>
-          </h2>
-          <p>empresa dedicada al mantenimiento preventivo edilicio.</p>
-        </Link>
+     
 
         <Link href="/Servicio"
           className={styles.card}>
