@@ -1,3 +1,4 @@
+/* Estilos generales */
 .wrapper {
     max-width: 1000px;
     margin: 20px auto;
@@ -8,24 +9,52 @@
 }
 .titulowrapper {
     text-align: center;
-    color: var(rgb(10, 10, 10));
+    color: rgb(253, 252, 252);
     text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
     font-size: 40px;
     font-weight: bold;
-    
-    
 }
 .grilla {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    gap: 1rem;
 }
-.filtro{
-    color: var(rgb(10, 9, 9));
+.filtro {
+    color: rgb(255, 254, 254);
     text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
-    font-size: 30px;
+    font-size: 100%;
     font-weight: bold;
-    margin-top: 35px;
-    margin-left: 15px;
-    
 }
+
+/* Media queries para resoluciones de teléfonos móviles */
+@media (max-width: 768px) {
+    .wrapper {
+        font-size: 150%;
+    }
+    .titulowrapper {
+        font-size: 50px;
+    }
+    .grilla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .filtro {
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        font-size: 100%;
+    }
+    .titulowrapper {
+        font-size: 25px;
+    }
+    .grilla {
+        grid-template-columns: 1fr;
+    }
+    .filtro {
+        font-size: 80%;
+    }
+}
+
+

@@ -1,15 +1,8 @@
-.card {
- 
-    max-width: 100%;
-    margin: 1rem;
-    color: var(rgb(10, 10, 10));
-    border-radius: 1rem;
-    border: 1px solid var(rgb(10, 10, 10));
-   
-}
+
 .imagen-producto-venta {
   max-width: 100%;
-
+  border-radius: 1rem;
+  
   }
 
 
