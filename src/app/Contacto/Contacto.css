@@ -8,7 +8,7 @@
 }
 
 .titulo {
-  color: floralwhite;
+  color: rgba(248, 95, 24, 0.986);
   text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
   font-size: 75px;
   font-weight: 800;
@@ -18,60 +18,85 @@
 .info {
   color: floralwhite;
   text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
-  font-size: 51px;
-  font-weight: 800;
+  font-size: 30px;
+  font-weight: 700;
   margin-top: 25px;
 }
 
+/* styles.css */
+
 .formulario {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
-  width: 100%; 
-  max-width: 1000px;
-}
-
-.formulario label,
-.formulario input,
-.formulario textarea,
-.formulario input[type="submit"] {
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 1000px; 
-  margin: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.imagen-container {
-  max-width: 10%;
-  height: auto; 
-  display: block; 
-  margin: 15px 15px 0px 30px; 
-  float: left;
+.formulario label {
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.formulario textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.formulario button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.formulario button:hover {
+  background-color: #0056b3;
 }
 
 /* Media queries para móviles */
 @media (max-width: 600px) {
-
-  .contacto {
-    margin: 2rem;
-  }
-  .titulo {
-      font-size: 40px;
-  }
-
-  .info {
-      font-size: 20px;
-  }
-
   .formulario {
-      flex-direction: column;
-      width: 90%;
+      padding: 15px;
   }
 
   .formulario label,
-  .formulario input,
+  .formulario input[type="text"],
+  .formulario input[type="email"],
   .formulario textarea,
-  .formulario input[type="submit"] {
-      width: 100%;
-      margin: 5px 0;
+  .formulario button {
+      max-width: 100%;
   }
+}
+
+
+/* Contacto.css */
+
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.5em;
 }

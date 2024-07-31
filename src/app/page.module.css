@@ -41,7 +41,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(40%, auto));
+  grid-template-columns: repeat(3, minmax(37%, auto));
   max-width: 100%;
   width: var(--max-width);
 }

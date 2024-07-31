@@ -10,6 +10,7 @@ export default function CardWrapper () {
     return (
          <div className="wrapper"> 
          <h2 className="titulowrapper">Galeria</h2>
+         <br />
          <div className="grilla">
             <div className="filtro">
                 <label>
@@ -32,11 +33,7 @@ export default function CardWrapper () {
                     setfiltros("aire")
                 }}/> aire < br/>
                 </label>
-                <label >
-                <input type="radio" name="categoria" value="consola" onChange={()=>{
-                    setfiltros("consola")
-                }}/> consola < br/>
-                </label>
+               
             </div>    
             
            {data.map(elemento =>{
