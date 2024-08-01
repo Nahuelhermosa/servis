@@ -1,33 +1,50 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, ChangeEvent } from 'react';
 import Link from 'next/link';
 import './Contacto.css';
 import Nav from '../Componentes/Nav';
 
+// Define las interfaces para formData y errors
+interface FormData {
+    nombre: string;
+    email: string;
+    comentario: string;
+}
+
+interface Errors {
+    nombre: string;
+    email: string;
+    comentario: string;
+}
+
 export default function Contacto() {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<FormData>({
         nombre: '',
         email: '',
         comentario: ''
     });
 
-    const [errors, setErrors] = useState({
+    const [errors, setErrors] = useState<Errors>({
         nombre: '',
         email: '',
         comentario: ''
     });
 
-    const handleChange = (e) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
 
-        if (errors[name]) {
-            validateField(name, value);
+        // Asegurarse de que name es una clave válida
+        if (name in formData) {
+            setFormData({ ...formData, [name]: value });
+
+            if (errors[name as keyof FormData]) {
+                validateField(name as keyof FormData, value);
+            }
         }
     };
 
-    const validateField = (name, value) => {
+    const validateField = (name: keyof FormData, value: string) => {
         let error = '';
         if (!value.trim()) {
             error = `${name.charAt(0).toUpperCase() + name.slice(1)} es obligatorio`;
@@ -45,12 +62,12 @@ export default function Contacto() {
 
     const validate = () => {
         const newErrors = Object.keys(formData).reduce((acc, key) => {
-            const error = validateField(key, formData[key]);
-            if (error) acc[key] = error;
+            const error = validateField(key as keyof FormData, formData[key as keyof FormData]);
+            if (error) acc[key as keyof FormData] = error;
             return acc;
-        }, {});
+        }, {} as Partial<Errors>);
 
-        setErrors(newErrors);
+        setErrors(newErrors as Errors);
         return Object.keys(newErrors).length === 0;
     };
 
