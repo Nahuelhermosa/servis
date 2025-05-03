@@ -9,8 +9,9 @@
 }
 
 .titulo-nosotros {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(248, 95, 24, 0.986);
-  text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
   font-size: 75px;
   font-weight: 800;
   margin-top: 5px;
@@ -22,7 +23,9 @@
 }
 
 .servicio-contenedor p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
   text-align: center; /* Centra el texto */
 }
 
@@ -54,10 +57,12 @@
   }
 
   .titulo-nosotros {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px; /* Reduce el tamaño de la fuente del título */
   }
 
   .servicio-contenedor p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px; /* Reduce el tamaño de la fuente del párrafo */
   }
 
@@ -73,10 +78,12 @@
   }
 
   .titulo-nosotros {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px; /* Reduce el tamaño de la fuente del título */
   }
 
   .servicio-contenedor p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px; /* Reduce el tamaño de la fuente del párrafo */
   }
 

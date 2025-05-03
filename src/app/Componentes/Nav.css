@@ -4,7 +4,6 @@
     padding-bottom: 10px;
     position: relative;
     border-radius: 1rem;
-    background-color: #fff; /* Opcional: fondo blanco para contraste */
 }
 
 .nav-lista {
@@ -14,22 +13,21 @@
     list-style: none;
     text-align: justify;
     font-size: 100%;
-    flex-wrap: wrap; /* Para que baje a nueva línea si es necesario */
 }
 
 .nav-item {
     flex-grow: 1;
     padding: 5px 0;
     text-align: center;
-    color: #000000; /* Letras negras */
-    text-shadow: none; /* Eliminar sombras que oscurecen */
-    font-size: 32px; /* Tamaño más amigable */
+    color:rgba(190, 188, 186, 0.986) ;
+    text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
+    font-size: 51px;
 }
 
 .nav-item a {
     font-size: 100%;
     text-decoration: none;
-    color: #000000; /* Letras negras */
+    color: rgba(190, 188, 186, 0.986);
 }
 
 .nav-item a:hover {
@@ -41,7 +39,7 @@
     height: auto;
 }
 
-/* 🔽 Media query para móviles */
+/* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
@@ -53,39 +51,25 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        z-index: 1000;
     }
 
     .nav-lista {
         flex-direction: column;
         align-items: center;
-        display: none;
+        display: none; /* Ocultar el menú por defecto */
         width: 100%;
-        background-color: #fff;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        z-index: 999;
-        border-radius: 0 0 1rem 1rem;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .nav-lista.open {
-        display: flex;
+        display: flex; /* Mostrar el menú cuando esté abierto */
     }
 
     .nav-item {
-        font-size: 22px;
+        font-size: 250%; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
         padding: 10px 0;
-        color: #000000;
-    }
-
-    .nav-item a {
-        color: #fffcfc;
-        
     }
 
     .nav-item img {
-        max-width: 50px;
+        max-width: 50px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
     }
 }

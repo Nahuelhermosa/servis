@@ -1,3 +1,4 @@
+
 .main {
   display: flex;
   flex-direction: column;
@@ -44,6 +45,7 @@
   grid-template-columns: repeat(3, minmax(37%, auto));
   max-width: 100%;
   width: var(--max-width);
+  gap: 1.5rem;
 }
 
 .card {
@@ -62,6 +64,7 @@
 .card h2 {
   font-weight: 600;
   margin-bottom: 0.7rem;
+  font-size: 1.5rem;
 }
 
 .card p {
@@ -108,7 +111,8 @@
 .logo {
   position: relative;
 }
-/* Enable hover only on non-touch devices */
+
+/* Hover effects for desktop only */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
@@ -126,90 +130,105 @@
   }
 }
 
-/* Mobile */
+/* ---------------- MOBILE (<=700px) ---------------- */
 @media (max-width: 700px) {
+  .main {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
   .content {
-    padding: 4rem;
+    padding: 2rem 1rem;
   }
 
   .grid {
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
+    margin-bottom: 4rem;
+    max-width: 100%;
     text-align: center;
+    padding: 0 1rem;
+    gap: 1.5rem;
   }
 
   .card {
-    padding: 1rem 2.5rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    width: 100%;
   }
 
   .card h2 {
     margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 100%;
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 6rem 0 4rem;
   }
 
   .center::before {
     transform: none;
     height: 300px;
+    width: 100%;
+    margin-left: -50%;
   }
 
   .description {
     font-size: 0.8rem;
-  }
-
-  .description a {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 1rem;
   }
 
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
+  .description a {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
   }
 
   .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
     border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
     background: linear-gradient(
       to bottom,
       rgba(var(--background-start-rgb), 1),
       rgba(var(--callout-rgb), 0.5)
     );
-    background-clip: padding-box;
     backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
   }
 
   .description div {
     align-items: flex-end;
     pointer-events: none;
     inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
+    padding: 0.5rem;
+    height: 3.5rem;
     background: linear-gradient(
       to bottom,
       transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
+      
     );
     z-index: 1;
   }
 }
 
-/* Tablet and Smaller Desktop */
+/* ---------------- TABLET ---------------- */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
 }
 
+/* ---------------- DARK MODE ---------------- */
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
@@ -220,6 +239,7 @@
   }
 }
 
+/* Animation */
 @keyframes rotate {
   from {
     transform: rotate(360deg);

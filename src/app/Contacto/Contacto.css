@@ -1,102 +1,120 @@
+/* ---------- Contacto General ---------- */
 .contacto {
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 200%; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 1rem;
 }
 
+/* ---------- Título Principal ---------- */
 .titulo {
   color: rgba(248, 95, 24, 0.986);
-  text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
-  font-size: 75px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  font-size: 3.5rem;
   font-weight: 800;
-  margin-top: 25px;
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 1.2;
 }
 
+/* ---------- Información del Contacto ---------- */
 .info {
-  color: floralwhite;
-  text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
-  font-size: 30px;
-  font-weight: 700;
-  margin-top: 25px;
+  color: #fffaf0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  text-align: center;
+  max-width: 800px;
 }
 
-/* styles.css */
-
+/* ---------- Formulario ---------- */
 .formulario {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1rem;
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .formulario label {
-  width: 100%;
-  margin-bottom: 15px;
-  font-weight: bold;
-  color: #333;
+  font-weight: 600;
+  color: #222;
+  font-size: 1rem;
 }
 
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario textarea {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 0.75rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
 }
 
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Textarea específico */
 .formulario textarea {
-  height: 100px;
+  height: 120px;
   resize: vertical;
 }
 
+/* ---------- Botón ---------- */
 .formulario button {
   background-color: #007bff;
   color: white;
-  padding: 10px 15px;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  font-size: 16px;
-  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .formulario button:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
-/* Media queries para móviles */
-@media (max-width: 600px) {
-  .formulario {
-      padding: 15px;
-  }
-
-  .formulario label,
-  .formulario input[type="text"],
-  .formulario input[type="email"],
-  .formulario textarea,
-  .formulario button {
-      max-width: 100%;
-  }
-}
-
-
-/* Contacto.css */
-
+/* ---------- Error ---------- */
 .error {
   color: red;
-  font-size: 0.875em;
-  margin-top: 0.5em;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .info {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .formulario {
+    padding: 1.5rem;
+  }
+
+  .formulario button {
+    width: 100%;
+  }
 }
