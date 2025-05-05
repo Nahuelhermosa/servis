@@ -1,6 +1,7 @@
 .nav {
     max-width: 100%;
-    margin: 20px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 10px;
     position: relative;
     border-radius: 1rem;
@@ -19,8 +20,8 @@
     flex-grow: 1;
     padding: 5px 0;
     text-align: center;
-    color:rgba(190, 188, 186, 0.986) ;
-    text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
+    color:rgba(255, 255, 255, 0.986) ;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
     font-size: 51px;
 }
 

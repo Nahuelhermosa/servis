@@ -1,60 +1,65 @@
-/* Estilos generales */
 .wrapper {
     max-width: 1000px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 200%; 
-}
-.titulowrapper {
-    text-align: center;
-    color:rgba(248, 95, 24, 0.986) ;
-    text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
-    font-size: 80px;
-    font-weight: bold;
-}
-.grilla {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-}
-.filtro {
-    color:rgba(190, 188, 186, 0.986) ;
-    text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
     font-size: 100%;
+  }
+  
+  .titulowrapper {
+    text-align: center;
+    color: rgba(248, 95, 24, 0.986);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    font-size: 3rem;
     font-weight: bold;
-}
-
-/* Media queries para resoluciones de teléfonos móviles */
-@media (max-width: 768px) {
-    .wrapper {
-        font-size: 150%;
-    }
+  }
+  
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 👈 se adapta solo */
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .filtro {
+    display: flex;
+    flex-direction: column; /* 👈 Uno debajo del otro */
+    align-items: center;
+    gap: 1.5rem;
+    color: rgba(190, 188, 186, 0.986);
+    text-shadow: -2px -2px 0 #050505, 2px -2px 0 #070707, -2px 2px 0 #070707, 2px 2px 0 #030303;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+  }
+  .filtro label {
+    font-size: 1.7rem;
+  }
+  
+  @media (max-width: 768px) {
     .titulowrapper {
-        font-size: 50px;
+      font-size: 2rem;
     }
-    .grilla {
-        grid-template-columns: repeat(2, 1fr);
+  
+    .filtro label {
+      font-size: 1.2rem;
     }
-    .filtro {
-        font-size: 150%;
-    }
-}
-
-@media (max-width: 480px) {
-    .wrapper {
-        font-size: 100%;
-    }
+  }
+  
+  @media (max-width: 480px) {
     .titulowrapper {
-        font-size: 25px;
+      font-size: 1.5rem;
     }
-    .grilla {
-        grid-template-columns: 1fr;
-    }
+  
     .filtro {
-        font-size: 80%;
+      flex-direction: column;
+      align-items: center;
     }
-}
-
-
+  
+    .filtro label {
+      font-size: 1rem;
+    }
+  }
+  

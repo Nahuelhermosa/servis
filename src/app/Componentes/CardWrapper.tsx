@@ -13,25 +13,26 @@ export default function CardWrapper () {
          <br />
          <div className="grilla">
             <div className="filtro">
-                <label>
-                <input type="radio" name="categoria" value="heladera" onChange={()=>{
-                    setfiltros("heladera")
-                }}/> heladera < br/>
+                 <label >
+                <input type="radio" name="categoria" value="aire" onChange={()=>{
+                    setfiltros("aire")
+                }}/> Aire acondicionado < br/>
                 </label>
+                
                 <label >
                 <input type="radio" name="categoria" value="lavarropa" onChange={()=>{
                     setfiltros("lavarropa")
-                }}/> lavarropas < br/>
+                }}/> Lavarropas < br/>
                 </label>
                 <label >
                 <input type="radio" name="categoria" value="secarropas" onChange={()=>{
                     setfiltros("secarropas")
-                }}/> secarropas < br/>
+                }}/> Secarropas < br/>
                 </label>
-                <label >
-                <input type="radio" name="categoria" value="aire" onChange={()=>{
-                    setfiltros("aire")
-                }}/> aire < br/>
+               <label>
+                <input type="radio" name="categoria" value="heladera" onChange={()=>{
+                    setfiltros("heladera")
+                }}/> Heladera < br/>
                 </label>
                
             </div>    
