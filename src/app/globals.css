@@ -107,8 +107,8 @@ a {
 @media (max-width: 700px) {
   body {
     background-image: url('/guante-francesa.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
+    
     background-position: top center;
     background-color: rgb(var(--background-start-rgb)); /* color de fondo de respaldo */
   }
