@@ -5,7 +5,7 @@ import Link from 'next/link';
 import './Contacto.css';
 import Nav from '../Componentes/Nav';
 
-// Define las interfaces para formData y errors
+// interfaces para formData y errors
 interface FormData {
     nombre: string;
     email: string;
@@ -34,7 +34,7 @@ export default function Contacto() {
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
 
-        // Asegurarse de que name es una clave válida
+        // Asegurarse que name* es una clave válida
         if (name in formData) {
             setFormData({ ...formData, [name]: value });
 
